@@ -1,0 +1,159 @@
+/*
+    Edit me.
+*/
+
+/*
+Reset css
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end */
+
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  background-color: #fcfcfc;
+}
+.text-center {
+  text-align: center;
+}
+.block {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.input-section {
+  display: block;
+  padding: 20px 15px;
+}
+.section-head {
+  padding: 10px 0;
+}
+
+.error {
+  font-size: 0.8em;
+  /* padding: 15px; */
+  color: red;
+  line-height: 30px;
+  height: 30px;
+}
+.error:after {
+  content: ''
+}
+
+input {
+  border-color: 1px solid #666;
+  border-radius: 0px;
+  outline: none;
+  line-height: 20px;
+  padding-left: 5px;
+  margin: 0 5px;
+}
+
+button {
+  border-radius: 0;
+  border: 0;
+  outline: none;
+  line-height: 21px;
+  background-color: #1ba34c;
+  color: #fff;
+  margin: 0 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #018933;
+}
+
+@keyframes font_animation {
+	0% { font-size: 16px; color: #000; }
+	50% { font-size: 0.99em; color: #333; }
+	100% { font-size: 16px; color: #000; }
+}
+
+#match-message {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+#winner-wrapper {
+  animation: font_animation 1s infinite;
+}
+
+#winner {
+  padding-bottom: 15px;
+  display: inline-block;
+  line-height: 20px;
+}
+
+/* Matches */
+.rounds {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+.rounds > .round {
+  min-width: 75px;
+}
+
+li.match-block {
+  height: 13px;
+  width: 13px;
+  float: left;
+  margin: 5px;
+  border: 1px solid #999;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+li.match-block.done {
+  background-color: #333;
+  border: none;
+  box-shadow: 1px 1px 2px #666;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="./client/styles.css">
+  <title>Knockout Tournament</title>
+</head>
+
+<body>
+  <section class="input-section">
+    <h3 class="section-head text-center">Let's Play</h3>
+    <div class="wrapper text-center">
+      <input id="teamsPerMatch" placeholder="Teams per match" type="number" />
+      <input id="numberOfTeams" placeholder="Number of teams" type="number" />
+      <button id="start">Start</button>
+    </div>
+    <div id="error" class="error text-center">
+    </div>
+  </section>
+  <section class="matches-section">
+    <span id="match-message" class="block text-center"></span>
+    <div class="text-center hide" id="winner-wrapper">
+      <span id="winner"></span>
+      <span>&nbsp;is the Winner</span>
+    </div>
+    <div id="matches-wrapper">
+    </div>
+  </section>
+  <script type="text/javascript" src="./client/constants/apiPath.js"></script>
+  <script type="text/javascript" src="./client/utils/apiService.js"></script>
+  <script type="text/javascript" src="./client/application.js"></script>
+  <script type="text/javascript" src="./client/client.js"></script>
+</body>
+
+</html>
